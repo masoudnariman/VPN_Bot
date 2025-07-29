@@ -65,7 +65,7 @@ def register_user_handlers(bot_instance, db_manager_instance, xui_api_instance):
         # --- پایان بخش اصلاح شده ---
 
         elif data == "user_support":
-            _bot.edit_message_text(f"📞 برای پشتیبانی با ما در ارتباط باشید: {SUPPORT_CHANNEL_LINK}", user_id, call.message.message_id)
+            _bot.edit_message_text(f"📞 برای پشتیبانی با ما در ارتباط باشید: @PingoPingAdmin", user_id, call.message.message_id)
         elif data.startswith("user_service_details_"):
             purchase_id = int(data.replace("user_service_details_", ""))
             show_service_details(user_id, purchase_id, call.message)
